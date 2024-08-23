@@ -1,4 +1,4 @@
-noconst fs = require('fs');
+const fs = require('fs');
 if (fs.existsSync('config.env')) require('dotenv').config({ path: './config.env' });
 function convertToBool(text, fault = 'true') {
     return text === fault ? true : false;
@@ -8,7 +8,7 @@ function convertToBool(text, fault = 'true') {
 global.thumb = fs.readFileSync('./lib/bugs/venom.jpg')
 const BOTNAME = 'VAJIRA-MD|-WA-BOT™';
 const FOOTERNAME = '> ＶＡＪＩＲＡ -  ＭＤ - Ｖ4';
-global.owner = process.env.OWNER_NUMBER  || '+256706806029' ;  // ADD YOUR NUMBER WITHOUT +
+global.owner = process.env.OWNER_NUMBER  || '256706806029' ;  // ADD YOUR NUMBER WITHOUT +
     
 module.exports = {
 SESSION_ID: process.env.SESSION_ID || ' VAJIRA-MD=3Yd0nTCB#fMa80SXBxt8SKJ36z8Uzvw6bxHhx364LgKdvfnoxfWc' ,
